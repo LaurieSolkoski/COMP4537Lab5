@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fde4cf; /* Soft peach background, similar to the image provided */
+    color: #333; /* Soft text color for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align to the top */
+    padding-top: 30px; /* Space from the top */
+}
+h2 {
+    background-color: #ffecdb; /* Lighter accent color */
+    color: #d2691e; /* Complementary text color */
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space after the title */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.container {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    background-color: #febd69; /* Warmer button color */
+    color: #d2691e;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0; /* Vertical margin only */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+textarea {
+    border: 1px solid #ffecdb;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0; /* Vertical margin only */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Includes padding in the width */
+}
+#response {
+    background-color: #ffecdb;
+    color: #d2691e;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0; /* Vertical margin only */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Includes padding in the width */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
