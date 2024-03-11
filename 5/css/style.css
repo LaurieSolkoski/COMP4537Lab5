@@ -18,6 +18,17 @@ h2 {
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+h3 {
+    background-color: #ffecdb;
+    color: #d2691e; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
 .container {
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);

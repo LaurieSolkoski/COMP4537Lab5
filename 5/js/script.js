@@ -1,3 +1,4 @@
+import { messages } from '../../lang/messages/en/user.js';
 class PatientInfoManager {
     constructor(serverEndpoint) {
         this.serverEndpoint = serverEndpoint;
@@ -74,15 +75,21 @@ class PatientInfoSystem {
         ];
 
         this.manager.insertPredefinedData(data)
-            .then(response => this.displayResponse(response))
-            .catch(error => console.error('Error:', error));
+            .then(response => {
+                console.log(messages.insertDataSuccess); 
+                this.displayResponse(response);
+            })
+            .catch(error => console.error(messages.errorPrefix, error));
     }
 
     submitQuery() {
         const query = document.getElementById('sqlQuery').value.trim();
         this.manager.submitQuery(query)
-            .then(response => this.displayResponse(response))
-            .catch(error => console.error('Error:', error));
+            .then(response => {
+                console.log(messages.submitQuerySuccess); 
+                this.displayResponse(response);
+            })
+            .catch(error => console.error(messages.errorPrefix, error));
     }
 
      displayResponse(data) {
@@ -101,7 +108,7 @@ class PatientInfoSystem {
         
         responseElement.appendChild(list);
     } else {
-        responseElement.innerText = 'No data available';
+        responseElement.innerText = messages.noDataAvailable; 
     }
     }
 }
@@ -113,7 +120,6 @@ class ApplicationInitializer {
         new PatientInfoSystem(manager);
     }
     
-    // self-executing method or static block for initialization
     static {
         ApplicationInitializer.initializeApplication();
     }
